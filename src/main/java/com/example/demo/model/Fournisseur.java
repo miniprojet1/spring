@@ -24,16 +24,16 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 public class Fournisseur {
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 	
-	@NotBlank
 	private String name;
 	
 	
-	
-	
 
+	public Fournisseur() {
+		super();
+	}
 
 	public int getId() {
 		return id;

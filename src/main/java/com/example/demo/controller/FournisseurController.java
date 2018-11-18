@@ -23,7 +23,6 @@ public class FournisseurController {
 	public void setFournisseurDao(FournisseurDao FournisseurDao) {
 		this.FournisseurDao = FournisseurDao;
 	}
-
 		@RequestMapping("/Fournisseur")
         public List<Fournisseur> getAllFournisseurs(){
            return FournisseurDao.getFournisseur();
