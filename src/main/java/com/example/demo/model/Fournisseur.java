@@ -29,7 +29,16 @@ public class Fournisseur {
 	
 	private String name;
 	
+	private String adresse ;
 	
+
+	public String getAdresse() {
+		return adresse;
+	}
+
+	public void setAdresse(String adresse) {
+		this.adresse = adresse;
+	}
 
 	public Fournisseur() {
 		super();

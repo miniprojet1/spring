@@ -30,6 +30,7 @@ public class Article {
 	private String nom_article;
 	private String categorie_article;
 	private int qte_article;
+	
 	private int id_fournisseur;
 	public int getId() {
 		return id;

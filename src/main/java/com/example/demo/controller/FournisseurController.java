@@ -33,7 +33,7 @@ public class FournisseurController {
             return FournisseurDao.getFournisseur(id);
         }
 
-        @RequestMapping(method = RequestMethod.POST,value="/Fournisseur")
+        @RequestMapping(method = RequestMethod.POST,value="/Fournisseurs")
         public void addFournisseur(@RequestBody Fournisseur player){
         	FournisseurDao.addFournisseur(player);
         }
