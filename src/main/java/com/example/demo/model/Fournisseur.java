@@ -30,6 +30,7 @@ public class Fournisseur {
 	private String name;
 	
 	private String adresse ;
+	
 	private String mail;
 	
 
