@@ -30,7 +30,16 @@ public class Fournisseur {
 	private String name;
 	
 	private String adresse ;
+	private String mail;
 	
+
+	public String getMail() {
+		return mail;
+	}
+
+	public void setMail(String mail) {
+		this.mail = mail;
+	}
 
 	public String getAdresse() {
 		return adresse;
