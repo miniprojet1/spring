@@ -10,7 +10,7 @@ import com.example.demo.model.Article;
 import java.util.List;
 
 @RestController
-public class ArticleController  {
+public class ArticleController {
 
     @Autowired
     private ArticleDao ArticleDao;
