@@ -10,6 +10,7 @@ import com.example.demo.model.Fournisseur;
 import java.util.List;
 
 @RestController
+
 public class FournisseurController {
 
     @Autowired
@@ -33,13 +34,13 @@ public class FournisseurController {
             return FournisseurDao.getFournisseur(id);
         }
 
-        @RequestMapping(method = RequestMethod.POST,value="/Fournisseurs")
+        @RequestMapping(method = RequestMethod.POST,value="/Fournisseur")
         public void addFournisseur(@RequestBody Fournisseur player){
         	FournisseurDao.addFournisseur(player);
         }
-        @RequestMapping(method = RequestMethod.PUT,value="/Fournisseur/{id}")
-            public void editFournisseur(@RequestBody Fournisseur player,@PathVariable int id){
-        	FournisseurDao.editFournisseur(player,id);
+        @RequestMapping(method = RequestMethod.PUT,value="/Fournisseur")
+            public void editFournisseur(@RequestBody Fournisseur player){
+        	FournisseurDao.editFournisseur(player);
             }
     @RequestMapping(method = RequestMethod.DELETE,value="/Fournisseur/{id}")
     public void deleteFournisseur(@PathVariable int id){

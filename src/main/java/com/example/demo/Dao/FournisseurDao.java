@@ -36,7 +36,7 @@ public class FournisseurDao {
     	FournisseurRepository.save(player);
     }
 
-    public void editFournisseur(Fournisseur player, int id) {
+    public void editFournisseur(Fournisseur player) {
 
     	FournisseurRepository.save(player);
     }

@@ -8,6 +8,7 @@ import com.example.demo.model.Employe;
 import com.example.demo.model.Commissioner;
 import com.example.demo.repository.EmployeRepository;
 
+import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,7 +32,12 @@ public class EmployeDao {
         return EmployeRepository.findById(id).get();
 
     }
-
+    /*
+    public boolean verif(int id ,String mdp) {
+    	ResultSet rs = stm.executeQuery("select * from employe where id="+id+",and mot_passe_emp="+mdp);
+    	
+    }
+*/ 
     public void addEmploye(Employe player){
     	EmployeRepository.save(player);
     }
